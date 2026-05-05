@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# hw2-connormcguire
-
-
-
 \## IT Support Ticket Triage System
 
 
