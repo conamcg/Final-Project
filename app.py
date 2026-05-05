@@ -134,6 +134,10 @@ tickets = [
     ("b.sullivan", "The slot confirmation emails that go out to our clinical partners stopped sending yesterday. We haven't changed anything on our end. A few partners have already called asking for their confirmations."),
     ("k.thomas", "One of our schedulers left the company last week. Can you remove her access from the scheduling system? She had admin-level permissions including the ability to override slot capacity limits."),
     ("c.osei", "The scheduling system approved a slot for patient therapy case #CTX-2024-8847 but our clinical team is saying the approval never came through on their end. The system log shows the approval was sent but the clinical portal shows no record of it. This is the third time this has happened this month with different patients."),
+    ("p.nguyen", "I need to update my email address in the scheduling system. My company email changed last week and I'm not receiving system notifications anymore."),
+    ("d.okafor", "I need to request a copy of my scheduling system activity log for the past 30 days for an internal audit. Who do I contact for this?"),
+    ("r.kim", "I'm trying to run the standard slot utilization report but it's giving me an error saying I don't have permission. Can someone grant me access?"),
+    ("t.walker", "I'm getting a browser error when I try to open the scheduling system on Chrome. It works fine on Edge. Can someone help me fix Chrome?"),
 ]
 
 # Run triage
