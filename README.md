@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # hw2-connormcguire
 
 
@@ -72,3 +73,6 @@ need to manage the manufacturing pipeline.
 
 https://youtu.be/A7tN1p6nqk0
 
+=======
+# Final-Project
+>>>>>>> 7c80aa0c9bf082f7a3f8457b314b70cc3bd829bf
