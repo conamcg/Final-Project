@@ -30,14 +30,24 @@ CLASSIFICATION: DELEGATE
 INPUT: Can someone set up a standard scheduler account for my new team member Sarah Johnson? She starts Monday at the Memphis site and just needs basic access.
 
 RUBRIC:
-  Multiple users or sites: NO
+  Multiple users or sites: YES
   System bug or data error: NO
   Patient or clinical impact: NO
   Custom config or deep knowledge: NO
   Recurring issue or pattern: NO
   VIP user: NO
 
-CLASSIFICATION: DELEGATE
+CLASSIFICATION: ESCALATE
+
+EMAIL 1 - TO BUSINESS USER:
+Subject: Scheduler Account Setup Request – Sarah Johnson (Memphis Site)
+Body:
+Thank you for submitting your account setup request. We've received your request for a standard scheduler account for Sarah Johnson starting Monday at the Memphis site, and we're processing this through our standard onboarding workflow. IT remains your primary point of contact for any questions or updates on this request.
+
+EMAIL 2 - TO IT RESOURCE:
+Subject: New User Account Setup – Sarah Johnson, Memphis Scheduler
+Body:
+Please set up a standard scheduler account for new team member Sarah Johnson at the Memphis manufacturing site, effective Monday. This request is being tracked by Senior Business Systems Management. No clinical urgency noted. Please provide a status update within the next two hours.
 
 ============================================================
 --- Ticket 4 (d.kim) ---
@@ -75,21 +85,21 @@ RUBRIC:
   Multiple users or sites: YES
   System bug or data error: YES
   Patient or clinical impact: YES
-  Custom config or deep knowledge: NO
+  Custom config or deep knowledge: YES
   Recurring issue or pattern: NO
   VIP user: NO
 
 CLASSIFICATION: ESCALATE
 
 EMAIL 1 - TO BUSINESS USER:
-Subject: ESCALATED – Scheduling System Slot Visibility Issue
+Subject: ESCALATED: Scheduling System Double-Booking Issue — Atlanta & Memphis Sites
 Body:
-We have received and escalated your report regarding duplicate slot availability across Atlanta and Memphis sites. This has been flagged to senior IT management as a priority issue given the potential for double-booking confirmed manufacturing slots. We are your primary point of contact and will coordinate directly with you on resolution and next steps.
+We've received your report of available slots appearing for previously confirmed manufacturing assignments across Atlanta and Memphis. This has been immediately escalated to our Senior Business Systems Manager for priority investigation. We're treating this as a critical data integrity issue given potential double-booking risks. You remain our primary point of contact, and we'll provide updates as the investigation progresses.
 
 EMAIL 2 - TO IT RESOURCE:
-Subject: ESCALATED – Scheduling System Double-Booking Risk (Atlanta/Memphis)
+Subject: CRITICAL ESCALATION: Scheduling System Showing Confirmed Slots as Available (Multi-Site)
 Body:
-Multiple schedulers across Atlanta and Memphis sites are viewing previously assigned manufacturing slots as available, creating a double-booking risk for made-to-order cell therapy production. This issue is under senior management oversight due to direct impact on patient treatment timelines and clinical operations. Please provide a status update within the next two hours.
+The manufacturing scheduling system is displaying previously assigned manufacturing slots as available across Atlanta and Memphis sites, creating risk of double-booking. This impacts patient treatment timelines and requires immediate investigation into the underlying data or configuration error. Senior Business Systems Manager is overseeing this ticket. Please provide a status update within the next two hours.
 
 ============================================================
 --- Ticket 7 (m.rodriguez) ---
@@ -106,14 +116,18 @@ RUBRIC:
 CLASSIFICATION: ESCALATE
 
 EMAIL 1 - TO BUSINESS USER:
-Subject: Scheduling System Configuration - Denver Site Onboarding (Escalated)
+Subject: RE: Denver Site Scheduling System Configuration – Escalated to Senior Management
+
 Body:
-We've received your ticket regarding custom scheduling system configuration for the Denver manufacturing site. This has been escalated to our Senior Business Systems Manager for prioritization given the site-specific slot capacity and approval workflow requirements. We will be your single point of contact throughout this configuration process and will keep you updated on progress.
+We've received your request for site-specific scheduling system configuration for the Denver manufacturing site. Given the custom workflow requirements for your made-to-order process, we're escalating this to our Senior Business Systems Manager for prioritization and resource allocation. You'll remain our primary point of contact throughout this engagement, and we'll keep you updated on progress.
+
+---
 
 EMAIL 2 - TO IT RESOURCE:
 Subject: ESCALATED: Denver Site Scheduling System Custom Configuration
+
 Body:
-Denver manufacturing site onboarding requires custom configuration of slot capacity rules and approval workflows that deviate from standard setup. This ticket is under Senior Business Systems Manager oversight. Please provide a status update within the next two hours.
+New Denver manufacturing site requires scheduling system customization to accommodate site-specific slot capacity rules and approval workflows that deviate from standard configuration. This ticket has been escalated to and is under the oversight of our Senior Business Systems Manager. Please provide a status update within the next two hours.
 
 ============================================================
 --- Ticket 8 (a.washington) ---
@@ -123,21 +137,21 @@ RUBRIC:
   Multiple users or sites: YES
   System bug or data error: YES
   Patient or clinical impact: YES
-  Custom config or deep knowledge: NO
+  Custom config or deep knowledge: YES
   Recurring issue or pattern: NO
   VIP user: NO
 
 CLASSIFICATION: ESCALATE
 
 EMAIL 1 - TO BUSINESS USER:
-Subject: ESCALATED - Houston Scheduler Q2 Slot Visibility Issue
+Subject: ESCALATED: Houston Scheduler Q2 Slot Visibility Issue
 Body:
-We received your report regarding the missing Q2 slot allocation data in the scheduler interface following this morning's update. This has been escalated to senior IT management for immediate investigation, and you can expect direct communication from our Senior Business Systems Manager. We remain your primary point of contact and will prioritize resolution given the patient treatment impact.
+We have received your ticket regarding the missing Q2 slot allocation data in the scheduler interface following this morning's system update. This issue has been immediately escalated to senior IT management given the impact to patient treatment confirmations. We are treating this as a priority and will serve as your single point of contact for all updates. We will provide a status within two hours.
 
 EMAIL 2 - TO IT RESOURCE:
-Subject: URGENT ESCALATION - Houston Q2 Slot Data Visibility Post-Update
+Subject: ESCALATED - Houston Site: Q2 Slots Missing from Scheduler Interface Post-Update
 Body:
-Houston schedulers cannot access Q2 slot allocation data in the scheduler interface following this morning's system update, though admin view still shows the data. This affects multiple users and has direct clinical impact on patient treatment confirmations. Our Senior Business Systems Manager is overseeing this ticket. Please provide a status update within the next two hours.
+Post-update at Houston site: Q2 slot allocation data visible in admin view but inaccessible to scheduler-facing interface, blocking patient treatment confirmations. This escalation is under Senior Business Systems Manager oversight due to clinical urgency and multiple affected users. Please provide a status update within the next two hours.
 
 ============================================================
 --- Ticket 9 (b.sullivan) ---
@@ -154,14 +168,14 @@ RUBRIC:
 CLASSIFICATION: ESCALATE
 
 EMAIL 1 - TO BUSINESS USER:
-Subject: ESCALATED: Slot Confirmation Email Outage — Senior Management Notified
+Subject: ESCALATED: Slot Confirmation Email Outage
 Body:
-We've received your ticket regarding the stopped slot confirmation emails to clinical partners. This has been escalated to our Senior Business Systems Manager for immediate attention, and our team will serve as your single point of contact throughout resolution. We understand the time-critical nature of this issue and are prioritizing it accordingly.
+We have received your ticket regarding the stopped slot confirmation emails to clinical partners and are immediately escalating this to our Senior Business Systems Manager for priority handling. This is now flagged as a critical issue given the clinical partner impact. We will serve as your single point of contact and provide updates as we progress.
 
 EMAIL 2 - TO IT RESOURCE:
-Subject: ESCALATED — Slot Confirmation Emails Down; Clinical Impact
+Subject: CRITICAL ESCALATION: Slot Confirmation Email System Down
 Body:
-Slot confirmation emails to clinical partners ceased sending yesterday with no recent system changes on the business side. This is affecting multiple partner sites and has clinical/patient timeline implications. Senior Business Systems Manager is now overseeing this ticket. Please provide a status update within the next two hours.
+Slot confirmation emails to clinical partners ceased sending yesterday with no recent changes reported on the business end, and clinical partners are already requesting status. This impacts multiple sites and has direct patient treatment timeline implications. Senior management is now overseeing this ticket. Please provide a status update within the next two hours.
 
 ============================================================
 --- Ticket 10 (k.thomas) ---
@@ -171,21 +185,11 @@ RUBRIC:
   Multiple users or sites: NO
   System bug or data error: NO
   Patient or clinical impact: NO
-  Custom config or deep knowledge: YES
+  Custom config or deep knowledge: NO
   Recurring issue or pattern: NO
   VIP user: NO
 
-CLASSIFICATION: ESCALATE
-
-EMAIL 1 - TO BUSINESS USER:
-Subject: RE: Scheduling System Access Removal – Ticket Escalated
-Body:
-We've received your request to remove the former scheduler's admin-level access from the scheduling system. This has been escalated to our Senior Business Systems Manager for prioritization. We'll serve as your primary point of contact and will follow up with next steps shortly.
-
-EMAIL 2 - TO IT RESOURCE:
-Subject: ESCALATED: Remove Admin Access – Former Scheduler
-Body:
-Remove admin-level permissions (including slot capacity override capability) for the former scheduler who left the company last week. This ticket has been escalated to senior management oversight due to the critical nature of admin access management in our scheduling system. Please provide a status update within the next two hours.
+CLASSIFICATION: DELEGATE
 
 ============================================================
 --- Ticket 11 (c.osei) ---
@@ -202,13 +206,69 @@ RUBRIC:
 CLASSIFICATION: ESCALATE
 
 EMAIL 1 - TO BUSINESS USER:
-Subject: ESCALATED - Scheduling System Approval Notification Failure (Ticket #CTX-2024-8847)
+Subject: ESCALATED: Scheduling System Approval Sync Issue – Ticket #CTX-2024-8847
 Body:
-We have received your report regarding the approval notification failure for patient case #CTX-2024-8847 and confirm this issue has been escalated to senior IT management for immediate investigation. Our team recognizes this is affecting clinical operations and will serve as your primary point of contact throughout resolution. You will receive a detailed status update within two hours.
+We have received your report regarding the approval notification gap for patient case #CTX-2024-8847 and are escalating this immediately to our Senior Business Systems Manager for priority investigation. This issue affects clinical workflows and patient timelines, and we are treating it with appropriate urgency. You remain our primary point of contact, and we will provide updates as soon as we have additional information.
 
 EMAIL 2 - TO IT RESOURCE:
-Subject: URGENT ESCALATION - Recurring Approval Notification Gap in Scheduling System
+Subject: URGENT ESCALATION: Scheduling System Approval Sync Failure – Pattern Detected
 Body:
-Critical issue: Scheduling system approvals are processing in the backend but failing to transmit notifications to the clinical portal—this is the third occurrence this month affecting patient therapy cases. Senior Business Systems Manager is now directly overseeing this ticket due to clinical impact on treatment timelines. This requires immediate root cause analysis of the approval-to-notification data flow and portal integration. Please provide a status update within the next two hours.
+The scheduling system is successfully logging approval notifications internally but failing to deliver them to the clinical portal—this is the third occurrence this month across different patient cases, creating a critical gap in the clinical team's workflow. This ticket is under direct oversight of the Senior Business Systems Manager due to patient treatment timeline impact and recurring nature. Please provide a status update within the next two hours.
+
+============================================================
+--- Ticket 12 (p.nguyen) ---
+INPUT: I need to update my email address in the scheduling system. My company email changed last week and I'm not receiving system notifications anymore.
+
+RUBRIC:
+  Multiple users or sites: NO
+  System bug or data error: NO
+  Patient or clinical impact: NO
+  Custom config or deep knowledge: NO
+  Recurring issue or pattern: NO
+  VIP user: NO
+
+CLASSIFICATION: DELEGATE
+
+============================================================
+--- Ticket 13 (d.okafor) ---
+INPUT: I need to request a copy of my scheduling system activity log for the past 30 days for an internal audit. Who do I contact for this?
+
+RUBRIC:
+  Multiple users or sites: NO
+  System bug or data error: NO
+  Patient or clinical impact: NO
+  Custom config or deep knowledge: NO
+  Recurring issue or pattern: NO
+  VIP user: NO
+
+CLASSIFICATION: DELEGATE
+
+============================================================
+--- Ticket 14 (r.kim) ---
+INPUT: I'm trying to run the standard slot utilization report but it's giving me an error saying I don't have permission. Can someone grant me access?
+
+RUBRIC:
+  Multiple users or sites: NO
+  System bug or data error: NO
+  Patient or clinical impact: NO
+  Custom config or deep knowledge: NO
+  Recurring issue or pattern: NO
+  VIP user: NO
+
+CLASSIFICATION: DELEGATE
+
+============================================================
+--- Ticket 15 (t.walker) ---
+INPUT: I'm getting a browser error when I try to open the scheduling system on Chrome. It works fine on Edge. Can someone help me fix Chrome?
+
+RUBRIC:
+  Multiple users or sites: NO
+  System bug or data error: NO
+  Patient or clinical impact: NO
+  Custom config or deep knowledge: NO
+  Recurring issue or pattern: NO
+  VIP user: NO
+
+CLASSIFICATION: DELEGATE
 
 ============================================================

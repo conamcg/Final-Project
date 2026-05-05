@@ -12,9 +12,9 @@ VIP_USERS = {"c.osei"}
 # Rubric questions — each evaluated in isolation
 RUBRIC_QUESTIONS = [
     "Does the ticket explicitly name or describe more than one user or more than one site as being affected? Answer only YES or NO. If you are uncertain, answer YES.",
-    "Does the ticket describe system behavior that contradicts what the system is supposed to do, such as showing wrong data, failing to send, or behaving differently after an update? Answer only YES or NO. If you are uncertain, answer YES.",
+    "Does the ticket describe system behavior that contradicts what the system is supposed to do, such as showing wrong data, failing to send, or behaving differently after an update, affecting multiple users or the system as a whole — not just one user's browser or local device? Answer only YES or NO. If you are uncertain, answer YES.",
     "Does the ticket contain the words 'patient', 'clinical', or 'treatment' in a context that describes a current disruption? Answer only YES or NO. If you are uncertain, answer YES.",
-    "Does the ticket explicitly request changes to slot capacity rules, approval workflows, or site-specific system configuration? Answer only YES or NO. If you are uncertain, answer YES.",
+    "Does the ticket explicitly request changes to slot capacity rules, approval workflows, or site-specific system configuration — not standard user account creation or access provisioning? Answer only YES or NO. If you are uncertain, answer YES.",
     "Does the ticket explicitly state that the same issue has happened before or is happening repeatedly? Answer only YES or NO. If you are uncertain, answer YES.",
 ]
 
