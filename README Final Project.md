@@ -1,6 +1,6 @@
 # Cell Therapy Ticket Triage
 
-An AI-powered IT ticket triage tool built for a Senior Business Systems Manager overseeing scheduling systems used in cell therapy manufacturing.
+An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manager overseeing scheduling systems used in cell therapy manufacturing.
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
 
@@ -59,7 +59,7 @@ The baseline is the current manual process: the manager reads each ticket indivi
 
 | Dimension | Manual Baseline | This Tool |
 |---|---|---|
-| Time for 15 tickets | ~45 minutes | 30–60 seconds end to end |
+| Time for 15 tickets | ~45 minutes | ~75 seconds end to end |
 | Triage consistency | Variable — rubric applied from memory, fatigue and context affect judgement | Consistent — same six questions applied identically to every ticket |
 | Email drafting | Written from scratch per escalation (~5 min each) | Auto-drafted instantly, ready for review |
 | Rubric coverage | Risk of skipping criteria under time pressure | All six criteria evaluated every time |
@@ -139,8 +139,18 @@ ANTHROPIC_API_KEY = "your-key-here"
 
 1. Clone the repo
 2. Install dependencies:
-3. Set your Anthropic API key
-4. Run the app
+   ```
+   pip install -r requirements.txt
+   ```
+3. Set your Anthropic API key:
+   ```
+   export ANTHROPIC_API_KEY="your-key-here"  # Mac/Linux
+   $env:ANTHROPIC_API_KEY="your-key-here"    # Windows PowerShell
+   ```
+4. Run the app:
+   ```
+   python -m streamlit run streamlit_app.py
+   ```
 5. Upload `sample_tickets_7.csv` using the Batch CSV Upload tab to see a full triage run
 
 ---
