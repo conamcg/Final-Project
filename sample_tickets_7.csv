@@ -1,0 +1,16 @@
+username,ticket
+j.martinez,I need to update the email address on my account from jmartinez@oldcompany.com to jmartinez@company.com. My login still works but notifications are going to the wrong address.
+a.ibrahim,All schedulers at our Vienna and Prague sites have been locked out of the slot booking module since 7am this morning. Both sites are unable to process any bookings and have jobs queued.
+s.kim,Can you confirm whether the scheduling platform supports single sign-on with our company identity provider? Our IT team is asking before they proceed with a broader rollout.
+t.nguyen,There is an urgent discrepancy in the scheduling platform affecting a patient currently in active cell therapy treatment. The system is showing a cancelled slot that the clinical team believes was confirmed and they need this resolved before the patient arrives tomorrow.
+d.williams,I accidentally archived a slot request instead of submitting it. Can you either restore it or let me know if I should just resubmit? Reference is SLT-44021. No time pressure on this one.
+r.patel,Can you add a note to my user profile indicating my backup contact is Lisa Park at l.park@company.com? I will be on leave next week and want the field updated before I go.
+l.chen,I am trying to download my personal booking history for the last six months but the export button on my profile page does not seem to do anything. Is there a different way to access this?
+m.okonkwo,Slot confirmation emails are not being delivered to schedulers in our Asia Pacific region. This is the third consecutive month this has happened and the previous two fixes did not hold. It was reported in March and again in April.
+f.hassan,My account is showing a training completion badge that does not belong to me. I think it was assigned in error. Can you remove it from my profile?
+p.rodriguez,I am new to the platform and am not sure how to search for a specific slot booking by reference number. Can you walk me through the steps or point me to the relevant help article?
+k.white,Can you update my job title in the system from Scheduler II to Senior Scheduler? My manager confirmed the promotion was processed in HR last week.
+n.okafor,The slot booking platform is showing zero available capacity across all three of our US manufacturing sites for the next ten days. Schedulers at each location cannot confirm appointments and we have patients expecting booking confirmations today.
+b.osei,I need to know the maximum number of slot requests I can have open at one time. I think I may be close to a limit based on a warning I saw but I cannot find documentation on what the threshold is.
+g.chen,I am not sure how to set up my out of office coverage in the platform before I go on leave next week. Is there a delegate or coverage feature and if so where do I find it?
+c.osei,Can you correct a typo in a slot booking I submitted yesterday? The location field says Manchestr instead of Manchester. Reference SLT-50291. Not urgent.
