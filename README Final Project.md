@@ -1,6 +1,6 @@
 # Cell Therapy Ticket Triage
 
-An AI-powered IT ticket triage tool built for a Senior Business Systems Manager overseeing scheduling systems used in cell therapy manufacturing.
+An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manager overseeing scheduling systems used in cell therapy manufacturing.
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
 
@@ -139,8 +139,18 @@ ANTHROPIC_API_KEY = "your-key-here"
 
 1. Clone the repo
 2. Install dependencies:
-3. Set your Anthropic API key
-4. Run the app
+   ```
+   pip install -r requirements.txt
+   ```
+3. Set your Anthropic API key:
+   ```
+   export ANTHROPIC_API_KEY="your-key-here"  # Mac/Linux
+   $env:ANTHROPIC_API_KEY="your-key-here"    # Windows PowerShell
+   ```
+4. Run the app:
+   ```
+   python -m streamlit run streamlit_app.py
+   ```
 5. Upload `sample_tickets_7.csv` using the Batch CSV Upload tab to see a full triage run
 
 ---
