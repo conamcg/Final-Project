@@ -59,7 +59,7 @@ The baseline is the current manual process: the manager reads each ticket indivi
 
 | Dimension | Manual Baseline | This Tool |
 |---|---|---|
-| Time for 15 tickets | ~45 minutes | 30–60 seconds end to end |
+| Time for 15 tickets | ~45 minutes | ~75 seconds end to end |
 | Triage consistency | Variable — rubric applied from memory, fatigue and context affect judgement | Consistent — same six questions applied identically to every ticket |
 | Email drafting | Written from scratch per escalation (~5 min each) | Auto-drafted instantly, ready for review |
 | Rubric coverage | Risk of skipping criteria under time pressure | All six criteria evaluated every time |
