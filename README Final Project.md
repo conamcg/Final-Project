@@ -26,12 +26,14 @@ Analyzes incoming IT support tickets and classifies them as **ESCALATE** or **DE
 
 A ticket is escalated if any of the following are true:
 
-1. More than one user or site is affected
-2. The ticket describes a system bug or data error affecting multiple users
-3. The ticket contains patient, clinical, or treatment language in a disruption context
-4. The ticket requests changes to slot capacity, approval workflows, or site configuration
-5. The issue has occurred before or is recurring
-6. The ticket was submitted by a VIP user
+| Question | Criteria |
+|---|---|
+| Q1 | Does the ticket explicitly name or describe more than one user or more than one site as being affected? |
+| Q2 | Does the ticket describe system behavior that contradicts what the system is supposed to do, such as showing wrong data, failing to send, or behaving differently after an update, affecting multiple users or the system as a whole — not just one user's browser or local device? |
+| Q3 | Does the ticket contain the words 'patient', 'clinical', or 'treatment' in a context that describes a current disruption? |
+| Q4 | Does the ticket explicitly request changes to slot capacity rules, approval workflows, or site-specific system configuration — not standard user account creation or access provisioning? |
+| Q5 | Does the ticket explicitly state that the same issue has happened before or is happening repeatedly? |
+| Q6 | Was this ticket submitted by a VIP user? |
 
 ### How the AI Evaluates Tickets
 
@@ -59,12 +61,12 @@ The baseline is the current manual process: the manager reads each ticket indivi
 
 | Dimension | Manual Baseline | This Tool |
 |---|---|---|
-| Time for 15 tickets | ~45 minutes | ~75 seconds end to end |
+| Time for 15 tickets | ~45 minutes | 75 seconds end to end |
 | Triage consistency | Variable — rubric applied from memory, fatigue and context affect judgement | Consistent — same six questions applied identically to every ticket |
 | Email drafting | Written from scratch per escalation (~5 min each) | Auto-drafted instantly, ready for review |
 | Rubric coverage | Risk of skipping criteria under time pressure | All six criteria evaluated every time |
 
-At roughly 5 minutes per escalated ticket (read, decide, draft two emails) and 2 minutes per delegated ticket, manually triaging a batch of 15 tickets takes approximately 45 minutes — assuming 5 escalations and 10 delegations. The app completes the same batch in 30–60 seconds. Across dozens of tickets per week, that compounds into hours of recovered time. The consistency gain matters equally — the rubric is applied the same way on every ticket, regardless of workload or fatigue.
+At roughly 5 minutes per escalated ticket (read, decide, draft two emails) and 2 minutes per delegated ticket, manually triaging a batch of 15 tickets takes approximately 45 minutes — assuming 5 escalations and 10 delegations. The app completes the same batch in about 75 seconds. Across dozens of tickets per week, that compounds into hours of recovered time. The consistency gain matters equally — the rubric is applied the same way on every ticket, regardless of workload or fatigue.
 
 ### Test Set
 
@@ -129,28 +131,17 @@ The app never sends emails automatically. All classifications are framed as reco
 
 ### Running on Streamlit Cloud
 
-The app is live at **https://finalproject-connormcguire.streamlit.app/** — no installation required. To provide an API key for grading, add it under App Settings → Secrets in Streamlit Cloud:
+The app is live at **https://finalproject-connormcguire.streamlit.app/** — no installation required. My API key is connected to the app so it will run if you want to test it out online.
 
-```toml
-ANTHROPIC_API_KEY = "your-key-here"
-```
-
-### Running Locally
+### If You Prefer Running Locally
 
 1. Clone the repo
 2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
 3. Set your Anthropic API key:
-   ```
-   export ANTHROPIC_API_KEY="your-key-here"  # Mac/Linux
-   $env:ANTHROPIC_API_KEY="your-key-here"    # Windows PowerShell
-   ```
+export ANTHROPIC_API_KEY="your-key-here"  # Mac/Linux
+$env:ANTHROPIC_API_KEY="your-key-here"    # Windows PowerShell
 4. Run the app:
-   ```
-   python -m streamlit run streamlit_app.py
-   ```
+python -m streamlit run streamlit_app.py
 5. Upload `sample_tickets_7.csv` using the Batch CSV Upload tab to see a full triage run
 
 ---
@@ -160,3 +151,20 @@ ANTHROPIC_API_KEY = "your-key-here"
 - [Streamlit](https://streamlit.io/) — UI framework
 - [Anthropic Claude](https://www.anthropic.com/) — AI classification and email drafting (claude-haiku-4-5)
 - [openpyxl](https://openpyxl.readthedocs.io/) — Excel export
+
+---
+
+## Artifact Snapshot
+
+### Full App — Rubric, Escalation Log, Delegation Log
+
+![App Overview](screenshot_detail.png)
+
+The app displays the full 6-question triage rubric on the left, with the batch CSV upload and single ticket tabs on the right. After processing, escalated and delegated tickets appear in separate logs below with timestamps and summaries.
+
+### Escalated Ticket — Rubric Breakdown and Auto-Drafted Emails
+
+![Escalation Detail](screenshot_overview.png)
+
+An expanded escalation entry showing the ticket text, YES/NO verdict for each rubric criterion, and two auto-drafted emails ready for the manager to review — one to the business user, one to the IT resource. This ticket (n.okafor) triggered Q1, Q2, Q3, and Q4 — multiple US sites down with patient appointment impact.
+
