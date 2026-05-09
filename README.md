@@ -4,6 +4,8 @@ An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manage
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
 
+**In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
+
 ---
 
 ## Context, User, and Problem
