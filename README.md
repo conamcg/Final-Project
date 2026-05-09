@@ -3,6 +3,7 @@
 An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manager overseeing scheduling systems used in cell therapy manufacturing.
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
+**Sample Tickets for Live App Use:** [Download sample_tickets_7.csv](sample_tickets_7.csv)
 
 **In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
 
