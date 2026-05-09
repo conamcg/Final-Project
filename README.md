@@ -4,7 +4,7 @@ An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manage
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
 
-**Sample Tickets for Live App Use:** [Download sample_tickets_7.csv](sample_tickets_7.csv)
+**[Sample Tickets for Live App Use:**(sample_tickets_7.csv)
 
 **In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
 
