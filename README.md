@@ -4,6 +4,10 @@ An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manage
 
 **Live App:** https://finalproject-connormcguire.streamlit.app/
 
+[Sample Tickets for Live App Use](sample_tickets_7.csv)
+
+**In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
+
 ---
 
 ## Context, User, and Problem
@@ -149,12 +153,12 @@ The app is live at **https://finalproject-connormcguire.streamlit.app/** — no 
 ## Artifact Snapshot
 
 ### Full App — Rubric, Escalation Log, Delegation Log
-![App Overview](screenshot_overview.png)
+![App Overview](screenshot_detail.png) 
 
 The app displays the full 6-question triage rubric on the left, with the batch CSV upload and single ticket tabs on the right. After processing, escalated and delegated tickets appear in separate logs below with timestamps and summaries.
 
 ### Escalated Ticket — Rubric Breakdown and Auto-Drafted Emails
-![Escalation Detail](screenshot_detail.png)
+![Escalation Detail](screenshot_overview.png)
 
 An expanded escalation entry showing the ticket text, YES/NO verdict for each rubric criterion, and two auto-drafted emails ready for the manager to review — one to the business user, one to the IT resource. This ticket (n.okafor) triggered Q1, Q2, Q3, and Q4 — multiple US sites down with patient appointment impact.
 
