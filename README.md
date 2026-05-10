@@ -6,7 +6,7 @@ An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manage
 
 [Sample Tickets for Live App Use](sample_tickets_7.csv)
 
-**In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
+**In-Depth Presentation and Live Demo (~7 min):** https://youtu.be/ad0QnIzmO0c
 
 [Presentation Slides](Final_Project.pptx)
 
