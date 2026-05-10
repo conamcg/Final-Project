@@ -8,6 +8,8 @@ An LLM-assisted IT ticket triage tool built for a Senior Business Systems Manage
 
 **In-Depth Presentation and Live Demo:** https://youtu.be/ad0QnIzmO0c
 
+[Presentation Slides](Final_Project.pptx)
+
 ---
 
 ## Context, User, and Problem
